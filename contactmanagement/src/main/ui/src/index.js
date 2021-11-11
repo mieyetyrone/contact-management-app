@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Route, BrowserRouter, Routes} from 'react-router-dom';
+import {Route, HashRouter, Routes} from 'react-router-dom';
 import CreateContact from './components/CreateContact';
 import DisplayContacts from './components/DisplayContacts';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/create" element={<CreateContact />} />
       <Route path="/contacts" element={<DisplayContacts />} />
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
