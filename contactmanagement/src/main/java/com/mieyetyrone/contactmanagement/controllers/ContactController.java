@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.mieyetyrone.contactmanagement.entities.Contact;
 import com.mieyetyrone.contactmanagement.services.ContactService;
 
-
 @RestController
 @RequestMapping("/api")
 public class ContactController {
